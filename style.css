@@ -40,11 +40,23 @@ section {
 }
 
 h1 {
-    font-size: 60px;
-    width: 500px;
+    font-size: 50px;
     margin-bottom: 80px;
-    padding-bottom: 20px;
     display: block;
+    position: absolute;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+h1:before {
+    content: '';
+    position: absolute;
+    bottom: -20px;/*線の上下位置*/
+    display: inline-block;
+    height: 1px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: black;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
 }
 
 img {
@@ -62,14 +74,23 @@ img {
 }
 
 /*==================== concept ==================== */
-.concept-h1 {
-    text-align: left;
-    width: 55vw;
-    border-bottom: solid 1px #000;
+.concept-h1:before {
+    left: 0px;
+    width: 110vw;/*線の長さ*/
 }
 
 .concept-wrapper  {
     text-align: left;
+    height: 100%;
+    padding-top: 100px;
+    position: relative;
+}
+
+.concept-div {
+  position: absolute;
+  top: 60%;
+  -webkit-transform : translateY(-60%);
+  transform : translateY(-60%);
 }
 .concept-wrapper p {
   font-size: 16px;
@@ -81,12 +102,22 @@ img {
     display:none;
 }
 
-/* ==================== outline ==================== */
+/* ==================== talkevent ==================== */
+.talk-h1 {
+    text-align: right;
+    right: 300px;
+}
 
+.talk-h1:before {
+    width: 80vw;/*線の長さ*/
+}
 
 
 /* ==================== works ==================== */
-
+.works-h1:before {
+    left: 0px;
+    width: 110vw;/*線の長さ*/
+}
 
 /* =============================================== */
 /* ==================== タブレット ==================== */
