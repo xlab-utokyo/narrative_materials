@@ -30,11 +30,13 @@ section {
     height: 100vh;
 }
 
+
+
 .container {
     margin-left: auto;
     margin-right: auto;
     padding: 50px 0px;
-    width: 90vw;
+    width: 70vw;
     height: 100%;
     text-align: center;
 }
@@ -53,7 +55,7 @@ h1 {
 .wrapper {
     text-align: left;
     position: relative;
-    width: 70%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     line-height: 2;
@@ -66,14 +68,12 @@ img {
 }
 
 /* ==================== top ==================== */
-/*
+
 .section0 {
-    background-image: url(./img/web_top_scroll.png);
-    height: 120vh;
+    background-image: url("./img/t2/t2_0002.png");
     background-position: center center;
     background-size:cover;
 }
-*/
 
 /*==================== concept ==================== */
 .concept-wrapper p {
@@ -110,7 +110,7 @@ img {
     }
 
     .section0 {
-        background-image: url(./img/web_top_img2_sp.png);
+        background-image: url("./img/t2/t2_0002.png");
     }
 
     .container3 {
