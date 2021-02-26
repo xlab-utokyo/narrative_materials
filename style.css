@@ -85,6 +85,11 @@ img {
     background-image: url("./img/t3_0000.png");
 }
 
+.cd-fixed-bg.cd-bg-2 {
+    background-image: url("./img/t3_0000.png");
+    min-height: 50%;
+}
+
 /* ==================== top ==================== */
 
 .section0 {
@@ -125,7 +130,6 @@ img {
 footer {
     margin-left: auto;
     margin-right: auto;
-    border-top: solid 1px #ffffff;
     padding-top: 20px;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -135,12 +139,20 @@ footer {
     display: flex;
     justify-content:space-between;
     margin-bottom: 50px;
+    padding-top: 15px;
+    border-top: solid 1px #ffffff;
+}
+
+.img-container {
+    display: flex;
+    justify-content:space-between;
+    width: 300px;
+    justify-content: space-between;
 }
 
 .img-container img {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
 }
 
 .footer-logo {
@@ -228,19 +240,36 @@ footer p{
         background-image: url(./img/web_top_img2_sp2.png);
     }
 
+    .container {
+        width: 80vw;
+    }
 
-/* ==================== Concept ==================== */
+/* ==================== footer ==================== */
 
-.concept-wrapper {
-    height: 80vh;
-    position: relative;
-    overflow: scroll;
-    top: -10px;
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container p {
+        position: absolute;
+        width: 90vw;
+        bottom: 10px;
+        font-size: 0.2rem;
+    }
+
+    .img-container {
+        display: flex;
+        position: absolute;
+        width: 90vw;
+    }
+
+    .footer-logo {
+        width: 40vw;
+        margin-bottom: 0px;
+        bottom: 70px;
+        position: absolute;
+        left: 30vw;
+    }
+
 }
 
-.concept-wrapper p{
-    font-size: 13px;
-    position: relative;
-    margin-bottom: 0px;
-}
-}
