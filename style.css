@@ -88,6 +88,7 @@ img {
 .cd-fixed-bg.cd-bg-2 {
     background-image: url("./img/t3_0000.png");
     min-height: 50%;
+    text-align: center;
 }
 
 /* ==================== top ==================== */
@@ -254,7 +255,7 @@ footer p{
         position: absolute;
         width: 90vw;
         bottom: 10px;
-        font-size: 0.2rem;
+        font-size: 0.5rem;
     }
 
     .img-container {
