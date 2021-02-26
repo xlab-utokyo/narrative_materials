@@ -87,13 +87,15 @@ img {
 
 /* ==================== top ==================== */
 
-/*
 .section0 {
-    background-image: url("./img/t2/t2_0002.png");
-    background-position: center center;
-    background-size:cover;
+    position: relative;
 }
-*/
+
+.section0 img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*==================== concept ==================== */
 .concept-wrapper p {
