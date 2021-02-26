@@ -212,8 +212,12 @@ footer p{
     }
 
     h1 {
-        font-size: 30px;
-        width: 80vw;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .wrapper {
+        width: 100%;
     }
 
     .section {
