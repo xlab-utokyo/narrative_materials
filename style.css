@@ -278,6 +278,7 @@ footer p{
 
     .cd-fixed-bg {
         width: 100vw;
+        max-height: 100%;
     }
 
     .cd-fixed-bg.cd-bg-1 {
