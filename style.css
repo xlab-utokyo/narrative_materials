@@ -107,6 +107,10 @@ img {
     transform: translateY(-50%);
 }
 
+.mainvis-sp {
+    display: none;
+}
+
 /*==================== concept ==================== */
 .concept-wrapper p {
   font-size: 16px;
@@ -281,6 +285,18 @@ footer p{
         min-height: 50%;
         text-align: center;
         padding-top: 140px;
+    }
+
+
+
+    .mainvis-pc {
+        display: none;
+    }
+
+    .mainvis-sp {
+        display: block;
+        width: 80vw;
+        padding-left: 20px;
     }
 
 /* ==================== talkevent ==================== */
