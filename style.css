@@ -268,15 +268,15 @@ footer p{
         padding-top: 3px;
     }
 
-    .section0 {
-        background-image: url(./img/web_top_img2_sp2.png);
-    }
-
     .container {
         width: 80vw;
     }
 
-    body::before {
+    .cd-fixed-bg {
+        position: initial;
+    }
+
+    .cd-fixed-bg::before {
         content:"";
         display:block;
         position:fixed;
