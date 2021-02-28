@@ -278,16 +278,16 @@ footer p{
 
     .cd-fixed-bg.cd-bg-1 {
         background-image: url("./img/5_iphone0000.png");
+        width: 100%;
     }
     
     .cd-fixed-bg.cd-bg-2 {
         background-image: url("./img/5_iphone0000.png");
+        width: 100%;
         min-height: 50%;
         text-align: center;
         padding-top: 140px;
     }
-
-
 
     .mainvis-pc {
         display: none;
@@ -315,8 +315,12 @@ footer p{
     }
     
     .talk-participation-sp {
+        display: block;
         margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
         width: 33%;
+
     }
 
 /* ==================== footer ==================== */
