@@ -92,6 +92,7 @@ img {
     background-image: url("./img/t3_0000.png");
     min-height: 50%;
     text-align: center;
+    padding-top: 140px;
 }
 
 /* ==================== top ==================== */
@@ -153,12 +154,6 @@ img {
     display: none;
 }
 
-/* ==================== works ==================== */
-.works-h1:before {
-    left: 0px;
-    width: 110vw;/*線の長さ*/
-}
-
 /* ==================== footer ==================== */
 footer {
     margin-left: auto;
@@ -171,7 +166,6 @@ footer {
 .footer-container {
     display: flex;
     justify-content:space-between;
-    margin-bottom: 50px;
     padding-top: 15px;
     border-top: solid 1px #ffffff;
 }
@@ -276,6 +270,17 @@ footer p{
 
     .container {
         width: 80vw;
+    }
+
+    .cd-fixed-bg.cd-bg-1 {
+        background-image: url("./img/5_iphone0000.png");
+    }
+    
+    .cd-fixed-bg.cd-bg-2 {
+        background-image: url("./img/5_iphone0000.png");
+        min-height: 50%;
+        text-align: center;
+        padding-top: 140px;
     }
 
 /* ==================== talkevent ==================== */
