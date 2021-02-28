@@ -272,6 +272,7 @@ footer p{
         width: 80vw;
     }
 
+    /*
     .cd-fixed-bg {
         position: initial;
     }
@@ -294,7 +295,16 @@ footer p{
     .cd-fixed-bg.cd-bg-2 {
         height:50vh;
     }
-    
+    */
+
+    .cd-fixed-bg.cd-bg-1 {
+        background-image:url("./img/5_iphone0000.png");
+    }
+
+    .cd-fixed-bg.cd-bg-2 {
+        background-image:url("./img/5_iphone0000.png");
+        height:50vh;
+    }
 
     .mainvis-pc {
         display: none;
