@@ -292,10 +292,7 @@ footer p{
     }
     
     .cd-fixed-bg.cd-bg-2 {
-        background-image: url("./img/5_iphone0000.png");
-        min-height: 50%;
-        text-align: center;
-        padding-top: 140px;
+        height:50vh;
     }
     
 
