@@ -276,6 +276,10 @@ footer p{
         width: 80vw;
     }
 
+    .cd-fixed-bg {
+        width: 100vw;
+    }
+
     .cd-fixed-bg.cd-bg-1 {
         background-image: url("./img/5_iphone0000.png");
     }
