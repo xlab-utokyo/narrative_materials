@@ -213,7 +213,7 @@ footer p {
 
 /* ==================== 共通 ==================== */
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     h1 {
@@ -231,7 +231,7 @@ footer p {
     }
 
     .container {
-        width: 80vw;
+        width: 85vw;
     }
 
     body::before {
