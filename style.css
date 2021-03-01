@@ -184,11 +184,12 @@ footer {
     width: 500px;
     left: 0px;
     float: right;
-    margin-bottom: 300px;
+    padding-bottom: 100px;
 }
 
-footer p{
+footer p {
     color: #ffffff;
+    font-size: 0.8rem;
 }
 
 
