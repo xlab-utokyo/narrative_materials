@@ -192,46 +192,7 @@ footer p {
 /* ==================== タブレット ==================== */
 /* =============================================== */
 
-@media screen and (min-width:768px) and (max-width:1033px) {
-    .js-modal-open img {
-        width: 120px;
-        height: 120px;
-    }
 
-    .section0 {
-        background-image: url("./img/t2/t2_0002.png");
-    }
-
-    .container3 {
-        width: 95vw;
-    }
-
-    .container4 {
-        width: 95vw;
-    }
-
-
-    .work {
-        float: left;
-        padding: 0 20px;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .work-caption {
-        width: 175px;
-    }
-
-    .date__table {
-        width: 100%;
-    }
-
-/* ==================== Concept ==================== */
-    .concept-wrapper p {
-        font-size: 1.2rem;
-    }
-
-}
 
 /* =============================================== */
 /* ==================== スマホ ==================== */
