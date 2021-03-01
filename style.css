@@ -73,26 +73,20 @@ img {
 }
 
 /*--固定背景の設定--*/
-.cd-fixed-bg {
-    position: relative;
-    min-height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 2;
-}
 
-/*--固定背景01--*/
-.cd-fixed-bg.cd-bg-1 {
-    background-image: url("./img/t3_0000.png");
-}
-
-.cd-fixed-bg.cd-bg-2 {
-    background-image: url("./img/t3_0000.png");
-    min-height: 50%;
-    text-align: center;
-    padding-top: 140px;
+body::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-position:50% 100%;
+    background-image:url("./img/t3_0000.png");
+    background-size:cover;
 }
 
 /* ==================== top ==================== */
@@ -188,13 +182,17 @@ footer {
 
 .footer-logo {
     width: 500px;
-    left: 0px;
     float: right;
-    margin-bottom: 300px;
+    padding-bottom: 100px;
 }
 
-footer p{
+.footer-logo-sp {
+    display: none;
+}
+
+footer p {
     color: #ffffff;
+    font-size: 0.8rem;
 }
 
 
@@ -272,12 +270,7 @@ footer p{
         width: 80vw;
     }
 
-    /*
-    .cd-fixed-bg {
-        position: initial;
-    }
-
-    .cd-fixed-bg::before {
+    body::before {
         content:"";
         display:block;
         position:fixed;
@@ -290,20 +283,6 @@ footer p{
         background-position:50% 100%;
         background-image:url("./img/5_iphone0000.png");
         background-size:cover;
-    }
-    
-    .cd-fixed-bg.cd-bg-2 {
-        height:50vh;
-    }
-    */
-
-    .cd-fixed-bg.cd-bg-1 {
-        background-image:url("./img/5_iphone0000.png");
-    }
-
-    .cd-fixed-bg.cd-bg-2 {
-        background-image:url("./img/5_iphone0000.png");
-        height:50vh;
     }
 
     .mainvis-pc {
@@ -343,27 +322,33 @@ footer p{
 
     .footer-container {
         flex-direction: column;
+        height: 35vh;
     }
 
     .footer-container p {
-        position: absolute;
         width: 90vw;
         bottom: 10px;
         font-size: 0.5rem;
+        flex-grow:1;
     }
 
     .img-container {
         display: flex;
-        position: absolute;
         width: 90vw;
+        flex-grow:4;
     }
 
     .footer-logo {
-        width: 40vw;
-        margin-bottom: 0px;
-        bottom: 50px;
-        position: absolute;
-        left: 30vw;
+        display: none;
+    }
+
+    .footer-logo-sp {
+        display: block;
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        flex-grow:1;
+        padding-bottom: 10px;
     }
 
 }
