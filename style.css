@@ -140,14 +140,6 @@ body::before {
     margin-top: 50px;
 }
 
-.talk-participation:hover {
-    -webkit-filter: invert(100%);
-    -moz-filter: invert(100%);
-    -o-filter: invert(100%);
-    -ms-filter: invert(100%);
-    filter: invert(100%);
-}
-
 .talk-participation-sp {
     display: none;
 }
