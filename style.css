@@ -16,6 +16,7 @@ html {
 
 body {
     height: 100%;
+    font-size: 17px;
     margin: 0;
     /*background-color: rgb(56,56,56);*/
 }
@@ -51,7 +52,7 @@ h1 {
     padding-bottom: 20px;
     border-bottom: solid 1px #ffffff;
     letter-spacing: 0.1em;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     /* text-shadow: 1px 2px 3px #808080;*/
@@ -60,7 +61,7 @@ h1 {
 .wrapper {
     text-align: left;
     position: relative;
-    width: 80%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     line-height: 2;
@@ -103,17 +104,6 @@ body::before {
 
 .mainvis-sp {
     display: none;
-}
-
-/*==================== concept ==================== */
-.concept-wrapper p {
-  font-size: 16px;
-  line-height: 2;
-  margin-bottom: 0px;
-}
-
-.en-concept{
-    display:none;
 }
 
 /* ==================== talkevent ==================== */
