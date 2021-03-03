@@ -233,10 +233,6 @@ footer p {
         width: 85vw;
     }
 
-    body {
-        font-family: sans-serif;
-    }
-
     body::before {
         content:"";
         display:block;
@@ -250,6 +246,10 @@ footer p {
         background-position:50% 100%;
         background-image:url("./img/5_iphone0000.png");
         background-size:cover;
+    }
+
+    p {
+        font-family: sans-serif;
     }
 
     .mainvis-pc {
