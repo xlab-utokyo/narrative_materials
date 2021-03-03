@@ -45,7 +45,7 @@ section {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 48px;
     margin-bottom: 25px;
     display: block;
     text-align: center;
@@ -125,6 +125,12 @@ body::before {
     display: none;
 }
 
+.talk-attention {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+
 .talk-participation {
     width: 33%;
     margin-top: 50px;
@@ -132,6 +138,11 @@ body::before {
 
 .talk-participation-sp {
     display: none;
+}
+
+/* ==================== talkevent ==================== */
+.works-h1 {
+    margin-bottom: 30px;
 }
 
 /* ==================== footer ==================== */
