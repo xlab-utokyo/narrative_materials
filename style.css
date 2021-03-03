@@ -1,15 +1,8 @@
 @charset "UTF-8";
 
 /* ==================== 共通 ==================== */
-/*
-:root{
-    --font-family-sans-serif: "Helvetica Neue", Helvetica, Arial,'Oswald','Noto Sans JP', sans-serif;
-    --font-family-monospace: "Helvetica Neue", Helvetica, Arial,'Noto Sans JP', monospace;
-}
-*/
 
 html {
-    font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic";
     max-width: 100%;
     height: 100%;
     font-size: 17px;
@@ -88,6 +81,11 @@ body::before {
     background-position:50% 100%;
     background-image:url("./img/t3_0000.png");
     background-size:cover;
+}
+
+p {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-weight:500;
 }
 
 /* ==================== top ==================== */
