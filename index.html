@@ -8,13 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
     <script type="text/javascript" src="popup.js"></script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous">
-        </script>
+    
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!--　OGP設定用　-->
@@ -109,7 +106,11 @@
             <div class="container container3">
                 <h1 class="works-h1">Prototype Exhibition</h1>
                 <div class="wrapper">
-                    <img src="./img/comingsoon.png" alt="">
+                    <!-- Add images to <div class="fotorama"></div> -->
+                    <div class="fotorama" data-nav="thumbs" data-autoplay="true" data-loop="true">
+                        <img src="https://s.fotorama.io/1.jpg" data-caption="One">
+                        <img src="https://s.fotorama.io/2.jpg" data-caption="Two">
+                    </div>
                 </div>
             </div>
         </section>

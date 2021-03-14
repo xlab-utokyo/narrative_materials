@@ -150,6 +150,7 @@ footer {
     padding-top: 20px;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-top: 100px;
 }
 
 .footer-container {
@@ -293,6 +294,10 @@ footer p {
     }
 
 /* ==================== footer ==================== */
+
+    footer {
+        margin-top: 0px;
+    }
 
     .footer-container {
         flex-direction: column;
