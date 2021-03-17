@@ -143,6 +143,13 @@ p {
     margin-bottom: 30px;
 }
 
+/* ==================== prototype ==================== */
+.fotorama__html div,
+.fotorama__html a {
+  display: block;
+  height: 100%;
+}
+
 /* ==================== footer ==================== */
 footer {
     margin-left: auto;
