@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* ==================== 共通 ==================== */
+
+html {
+    max-width: 100%;
+    height: 100%;
+    font-size: 17px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(56,56,56);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+section {
+    /*background-color: rgb(56,56,56);*/
+    color: #ffffff;
+    height: 100vh;
+}
+
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0px;
+    width: 70vw;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 56vh;
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #ffffff;
+    letter-spacing: 0.1em;
+    /* text-shadow: 1px 2px 3px #808080;*/
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    text-align: left;
+    position: relative;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/*--固定背景の設定--*/
+
+body::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-position:50% 100%;
+    background-image:url("./img/t3_0000.png");
+    background-size:cover;
+}
+
+p {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;;
+    font-weight:500;
+}
+
+.img-pdf {
+    width: 100%;
+}
+
+
+
+/* =============================================== */
+/* ==================== スマホ ==================== */
+/* =============================================== */
+
+@media screen and (max-width:767px) {
+
+/* ==================== 共通 ==================== */
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .section {
+        padding-top: 3px;
+    }
+
+    .container {
+        width: 85vw;
+    }
+
+    body::before {
+        content:"";
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:-1;
+        width:100%;
+        height:100vh;
+        background-repeat:no-repeat;
+        background-position:50% 100%;
+        background-image:url("./img/5_iphone0000.png");
+        background-size:cover;
+    }
+
+    p {
+        font-family: sans-serif;
+    }
+
+    .mainvis-pc {
+        display: none;
+    }
+
+    .mainvis-sp {
+        display: block;
+        width: 80vw;
+        padding-left: 20px;
+    }
+
+}
