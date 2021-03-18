@@ -3,152 +3,173 @@
 /* ==================== 共通 ==================== */
 
 html {
-    max-width: 100%;
-    height: 100%;
-    font-size: 17px;
+  max-width: 100%;
+  height: 100%;
+  font-size: 17px;
 }
 
 body {
-    height: 100%;
-    margin: 0;
-    background-color: rgb(56,56,56);
+  height: 100%;
+  margin: 0;
+  background-color: rgb(56, 56, 56);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 section {
-    /*background-color: rgb(56,56,56);*/
-    color: #ffffff;
-    height: 100vh;
+  /*background-color: rgb(56,56,56);*/
+  color: #ffffff;
+  height: 100vh;
 }
-
-
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px 0px;
-    width: 70vw;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0px;
+  width: 70vw;
+  text-align: center;
 }
 
-.youtube{
-    position: relative;
-    width: 100%;/*横幅いっぱいにwidthを指定*/
-    height:0px;/*高さはpaddingで指定するため0*/
-    padding-top: 56.25%;/*高さを指定（padding-bottomでも同様)*/
+.youtube {
+  position: relative;
+  width: 100%; /*横幅いっぱいにwidthを指定*/
+  height: 0px; /*高さはpaddingで指定するため0*/
+  padding-top: 56.25%; /*高さを指定（padding-bottomでも同様)*/
 }
 
-.youtube iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
-    font-size: 42px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: solid 1px #ffffff;
-    letter-spacing: 0.1em;
-    /* text-shadow: 1px 2px 3px #808080;*/
+  font-size: 42px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #ffffff;
+  letter-spacing: 0.1em;
+  /* text-shadow: 1px 2px 3px #808080;*/
 }
 
 h2 {
-    font-weight: normal;
-    margin-bottom: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .wrapper {
-    text-align: left;
-    position: relative;
-    line-height: 2;
-    margin-bottom: 50px;
+  text-align: left;
+  position: relative;
+  line-height: 2;
+  margin-bottom: 50px;
 }
 
 p {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;;
-    font-weight:500;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+}
+
+.technical-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 8px 10px 16px;
+  position: relative;
+}
+.technical-container .caption {
+  font-size: 300%;
+  text-align: center;
+  padding-top: 270px;
+  color: #fff;
+}
+.technical-container .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* 絶対位置指定 */
+  top: 0;
+  left: 0;
+  opacity: 0; /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.5); /* マスクは半透明 */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.technical-container:hover .mask {
+  opacity: 1; /* マスクを表示する */
 }
 
 .img-pdf {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .button-container {
-    display: flex;
+  display: flex;
 }
-
-
 
 /* =============================================== */
 /* ==================== スマホ ==================== */
 /* =============================================== */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
+  /* ==================== 共通 ==================== */
+  html {
+    font-size: 13px;
+  }
 
-/* ==================== 共通 ==================== */
-    html {
-        font-size: 13px;
-    }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+  }
 
-    h1 {
-        font-size: 1.6rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-        width: 100%;
-    }
+  .wrapper {
+    width: 100%;
+  }
 
-    .wrapper {
-        width: 100%;
-    }
+  .section {
+    padding-top: 3px;
+  }
 
-    .section {
-        padding-top: 3px;
-    }
+  .container {
+    width: 85vw;
+  }
 
-    .container {
-        width: 85vw;
-    }
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-image: url("./img/5_iphone0000.png");
+    background-size: cover;
+  }
 
-    body::before {
-        content:"";
-        display:block;
-        position:fixed;
-        top:0;
-        left:0;
-        z-index:-1;
-        width:100%;
-        height:100vh;
-        background-repeat:no-repeat;
-        background-position:50% 100%;
-        background-image:url("./img/5_iphone0000.png");
-        background-size:cover;
-    }
+  p {
+    font-family: sans-serif;
+  }
 
-    p {
-        font-family: sans-serif;
-    }
+  .mainvis-pc {
+    display: none;
+  }
 
-    .mainvis-pc {
-        display: none;
-    }
-
-    .mainvis-sp {
-        display: block;
-        width: 80vw;
-        padding-left: 20px;
-    }
-
+  .mainvis-sp {
+    display: block;
+    width: 80vw;
+    padding-left: 20px;
+  }
 }
