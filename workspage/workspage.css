@@ -118,6 +118,21 @@ p {
   -webkit-transition: all 0.2s ease;
 }
 
+.modal-content {
+    padding: 20px 40px;
+}
+
+.img-pdf-full {
+    width: 90%;
+}
+
+.img-pdf-close {
+    width: 20px;
+    position: fixed;
+    right: 50px;
+    top: 20px;
+}
+
 .technical-container p {
   position: absolute; /*絶対配置*/
   font-size: 50px;

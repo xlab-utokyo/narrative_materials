@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
-    <script type="text/javascript" src="popup.js"></script>
-    <script src="../js/shinomodal.js"></script>
+    <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="workspage.css">
 
     <!--　OGP設定用　-->
@@ -51,7 +50,16 @@
                 </div>
                 <h2>Technical Background</h2>
                 <div class="technical-container">
-                    <img src="../img/pdfsample.png" class="img-pdf shinomodal_baseimg" alt="PDFサンプル">
+                    <a id="demo01" href="#animatedModal"><img src="../img/pdfsample.png" class="img-pdf" alt="PDFサンプル"></a>
+                    <div id="animatedModal">
+                        <!--モーダルを閉じる-->
+                       <div class="close-animatedModal"> 
+                        <img src="../img/button/close.png" class="img-pdf-close" alt="">
+                       </div>
+                       <div class="modal-content">
+                            <img src="../img/pdfsample.png" class="img-pdf-full" alt="">
+                       </div>
+                   </div>
                     <p>More +</p>
                 </div>
                 <div class="button-container">
@@ -60,6 +68,14 @@
                 </div>
             </div>
         </section>
+        
+        <script type="text/javascript" src="../js/animatedModal.min.js"></script>
+        <script>
+            $("#demo01").animatedModal({
+                animatedIn: "zoomIn",
+                color: "rgb(56, 56, 56)"
+            });
+        </script>
     </body>
 
     </html>
