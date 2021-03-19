@@ -152,20 +152,20 @@ p {
 
 .fotorama-wrapper {
     display: flex;
-    width: 900px;
+    width: 1025px;
 }
 
 .fotorama img{
-    width: 600px;
-    height: 450px;
+    width: 800px;
+    height: 600px;
 }
 
 .fotorama__stage {
-    height: 450px !important;;
+    height: 600px !important;;
 }
 
 .fotorama__img {
-    height: 450px !important;;
+    height: 600px !important;;
 }
 
 .fotorama__caption__wrap {
@@ -186,16 +186,18 @@ p {
 }
 
 ul.thumbul li.thumbli {    
-	width: 150px;  /*1枚のサムネール画像領域の長さ*/
-	height: 112.5px;  /*1枚のサムネール画像領域の高さ*/
+	width: 112.5px;  /*1枚のサムネール画像領域の長さ*/
+	height: 150px;  /*1枚のサムネール画像領域の高さ*/
 	/*_width: 241px; 350px;*/
 	/*_height: 34px;  50px;*/
 	cursor:pointer;
 	color:#333;
 }
 
-li.thumbli img{ 
-    height: 112.5px;
+li.thumbli img{
+    width: 112.5px; 
+    height: 150px;
+    object-fit: cover;
 }
 
 ul.thumbul li.thumbli:hover {

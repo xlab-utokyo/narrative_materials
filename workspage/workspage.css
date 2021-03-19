@@ -61,6 +61,11 @@ h1 {
   /* text-shadow: 1px 2px 3px #808080;*/
 }
 
+h1 span {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
 h2 {
   font-weight: normal;
   margin-bottom: 20px;
@@ -147,6 +152,10 @@ p {
     margin-bottom: 20px;
     width: 100%;
   }
+
+  h1 span {
+    font-size: 1.3rem;
+}
 
   .wrapper {
     width: 100%;
