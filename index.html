@@ -12,6 +12,8 @@
     <!-- Fotorama from CDNJS, 19 KB -->
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <script type="text/javascript" src="./js/fotoramacustom.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!--　OGP設定用　-->
@@ -105,17 +107,31 @@
         <section id="section-works" class="section section-works cd-fixed-bg cd-bg-1">
             <div class="container container3">
                 <h1 class="works-h1">Prototype Exhibition</h1>
-                <div class="wrapper">
+                <div class="wrapper fotorama-wrapper">
                     <!-- Add images to <div class="fotorama"></div> -->
-                    <div class="fotorama" data-nav="thumbs" data-autoplay="true" data-loop="true" data-click="false" data-swipe="false">
-                        <div data-img="https://s.fotorama.io/1.jpg" data-caption="One"><a href="workspage/template.html"></a></div>
-                        <div data-img="https://s.fotorama.io/2.jpg" data-caption="Two"><a href="workspage/template.html"></a></div>
-                        <div data-img="https://s.fotorama.io/3.jpg" data-caption="Three"><a href="workspage/template.html"></a></div>
-                        <div data-img="https://s.fotorama.io/4.jpg" data-caption="Four"><a href="workspage/template.html"></a></div>
-                        <div data-img="https://s.fotorama.io/5.jpg" data-caption="Five"><a href="workspage/template.html"></a></div>
-                        <div data-img="https://s.fotorama.io/1.jpg" data-caption="Six"><a href="workspage/template.html"></a></div>
-                        <div data-img="https://s.fotorama.io/2.jpg" data-caption="Seven"><a href="workspage/template.html"></a></div>
-                        <div data-img="https://s.fotorama.io/3.jpg" data-caption="Eight"><a href="workspage/template.html"></a></div>
+                    <div class="fotorama" id="fotorama-divid" data-autoplay="true" data-loop="true" data-click="false" data-swipe="false">
+                        <div data-img="https://s.fotorama.io/1.jpg" data-caption="One" width=600 height=450><a href="workspage/template.html"></a></div>
+                        <div data-img="https://s.fotorama.io/2.jpg" data-caption="Two" width=600 height=450><a href="workspage/template.html"></a></div>
+                        <div data-img="https://s.fotorama.io/3.jpg" data-caption="Three" width=600 height=450><a href="workspage/template.html"></a></div>
+                        <div data-img="https://s.fotorama.io/4.jpg" data-caption="Four" width=600 height=450><a href="workspage/template.html"></a></div>
+                        <div data-img="https://s.fotorama.io/5.jpg" data-caption="Five" width=600 height=450><a href="workspage/template.html"></a></div>
+                        <div data-img="https://s.fotorama.io/1.jpg" data-caption="Six" width=600 height=450><a href="workspage/template.html"></a></div>
+                        <div data-img="https://s.fotorama.io/2.jpg" data-caption="Seven" width=600 height=450><a href="workspage/template.html"></a></div>
+                        <div data-img="https://s.fotorama.io/3.jpg" data-caption="Eight" width=600 height=450><a href="workspage/template.html"></a></div>
+                    </div>
+                    <div class="ul-wrapper">
+                        <ul class="lilist thumbul">
+                            <li class="thumbli" id="0" onclick="StartIndex(0)"><img src="https://s.fotorama.io/1.jpg" title="1" width=150 height=112.5></li>
+                            <li class="thumbli" id="1" onclick="StartIndex(1)"><img src="https://s.fotorama.io/2.jpg" title="2" width=150 height=112.5></li>
+                            <li class="thumbli" id="2" onclick="StartIndex(2)"><img src="https://s.fotorama.io/3.jpg" title="3" width=150 height=112.5></li>
+                            <li class="thumbli" id="3" onclick="StartIndex(3)"><img src="https://s.fotorama.io/4.jpg" title="4" width=150 height=112.5></li>
+                        </ul>
+                        <ul class="lilist thumbul">
+                            <li class="thumbli" id="4" onclick="StartIndex(4)"><img src="https://s.fotorama.io/5.jpg" title="5" width=150 height=112.5></li>
+                            <li class="thumbli" id="5" onclick="StartIndex(5)"><img src="https://s.fotorama.io/1.jpg" title="6" width=150 height=112.5></li>
+                            <li class="thumbli" id="6" onclick="StartIndex(6)"><img src="https://s.fotorama.io/2.jpg" title="7" width=150 height=112.5></li>
+                            <li class="thumbli" id="7" onclick="StartIndex(7)"><img src="https://s.fotorama.io/3.jpg" title="8" width=150 height=112.5></li>
+                        </ul>
                     </div>
                 </div>
             </div>

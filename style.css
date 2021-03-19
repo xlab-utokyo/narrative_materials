@@ -150,6 +150,62 @@ p {
   height: 100%;
 }
 
+.fotorama-wrapper {
+    display: flex;
+    width: 900px;
+}
+
+.fotorama img{
+    width: 600px;
+    height: 450px;
+}
+
+.fotorama__stage {
+    height: 450px !important;;
+}
+
+.fotorama__img {
+    height: 450px !important;;
+}
+
+.fotorama__caption__wrap {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+
+ /* 自作サムネールナビゲーション  hover selected */
+ ul.thumbul{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+}
+
+.ul-wrapper {
+    display: flex;
+}
+
+ul.thumbul li.thumbli {    
+	width: 150px;  /*1枚のサムネール画像領域の長さ*/
+	height: 112.5px;  /*1枚のサムネール画像領域の高さ*/
+	/*_width: 241px; 350px;*/
+	/*_height: 34px;  50px;*/
+	cursor:pointer;
+	color:#333;
+}
+
+li.thumbli img{ 
+    height: 112.5px;
+}
+
+ul.thumbul li.thumbli:hover {
+	background-color:yellow; /*サムネール画像にマウスオーバーのときの色（注２）*/
+}
+ul.thumbul li.thumbli.selected {                       
+	background-color:#00bfff; /*-サムネール画像が選択状態のときの色（注２）*/
+	cursor:default;
+   }
+
 /* ==================== footer ==================== */
 footer {
     margin-left: auto;
