@@ -355,6 +355,40 @@ footer p {
         margin-top: 230px;
     }
 
+    .fotorama-wrapper {
+        flex-direction: column;
+    }
+
+    .fotorama__stage {
+        height: 240px !important;;
+    }
+    
+    .fotorama__img {
+        height: 240px !important;;
+    }
+
+    .fotorama__img {
+        width: 320px;
+    }
+
+    .ul-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.thumbul {
+        display: flex;
+    }
+
+    ul.thumbul li.thumbli {
+        width: 25%;
+        height: 60px;
+    }
+
+    li.thumbli img {
+        height: 60px;
+    }
+
 /* ==================== footer ==================== */
 
     footer {
