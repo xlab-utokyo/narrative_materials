@@ -62,8 +62,8 @@ h1 {
 }
 
 h1 span {
-    margin-top: 20px;
-    font-size: 30px;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 h2 {
@@ -119,18 +119,18 @@ p {
 }
 
 .modal-content {
-    padding: 20px 40px;
+  padding: 20px 40px;
 }
 
 .img-pdf-full {
-    width: 90%;
+  width: 90%;
 }
 
 .img-pdf-close {
-    width: 20px;
-    position: fixed;
-    right: 50px;
-    top: 20px;
+  width: 20px;
+  position: fixed;
+  right: 50px;
+  top: 20px;
 }
 
 .technical-container p {
@@ -170,7 +170,7 @@ p {
 
   h1 span {
     font-size: 1.3rem;
-}
+  }
 
   .wrapper {
     width: 100%;
@@ -213,11 +213,35 @@ p {
     padding-left: 20px;
   }
 
+  .technical-container {
+    margin: 0px;
+  }
+
+  .technical-container p{
+    font-size: 20px;
+  }
+
+  .modal-content {
+    height: 100vh;
+  }
+
+  .img-pdf-full {
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .img-pdf-close {
+    right: initial;
+  }
+
   .button-container {
     flex-direction: column;
   }
 
   .button-container img {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
