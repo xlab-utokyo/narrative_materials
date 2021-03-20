@@ -205,6 +205,10 @@ li.thumbli img{
     filter: grayscale(100%);
 }
 
+li.thumbli img:hover{
+    filter: grayscale(0%);
+}
+
 /* ==================== footer ==================== */
 footer {
     margin-left: auto;
@@ -387,6 +391,10 @@ footer p {
 
     li.thumbli img {
         height: 60px;
+    }
+
+    li.thumbli img:active {
+        filter: grayscale(0%);
     }
 
 /* ==================== footer ==================== */
