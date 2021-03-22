@@ -38,7 +38,7 @@ section {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 44px;
     margin-bottom: 25px;
     display: block;
     text-align: center;
@@ -160,6 +160,10 @@ p {
     height: 450px;
 }
 
+.fotorama div {
+    letter-spacing: 0.1em;
+}
+
 .fotorama__stage {
     height: 450px !important;;
 }
@@ -244,7 +248,7 @@ footer {
 }
 
 .footer-logo {
-    width: 400px;
+    width: 350px;
     float: right;
     padding-bottom: 50px;
     padding-top: 10px;
