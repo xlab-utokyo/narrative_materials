@@ -87,6 +87,10 @@ p {
   font-weight: 500;
 }
 
+.fotorama {
+  margin-bottom: 50px;
+}
+
 .technical-container {
   width: 100%;
   overflow: hidden;
