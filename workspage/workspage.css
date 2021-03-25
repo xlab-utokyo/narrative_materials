@@ -91,6 +91,11 @@ p {
   margin-bottom: 50px;
 }
 
+.works-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 .technical-container {
   width: 100%;
   overflow: hidden;
