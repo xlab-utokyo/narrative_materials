@@ -91,6 +91,10 @@ p {
   color: #fff;
 }
 
+.img-top {
+  width: 100%;
+}
+
 .fotorama {
   margin-bottom: 50px;
 }
