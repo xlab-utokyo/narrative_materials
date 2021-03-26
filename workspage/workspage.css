@@ -87,6 +87,10 @@ p {
   font-weight: 500;
 }
 
+.wrapper p a{
+  color: #fff;
+}
+
 .fotorama {
   margin-bottom: 50px;
 }
