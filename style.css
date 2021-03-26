@@ -162,14 +162,16 @@ p {
 
 .fotorama div {
     letter-spacing: 0.1em;
+    object-fit: cover;
 }
 
 .fotorama__stage {
-    height: 450px !important;;
+    height: 450px !important;
 }
 
 .fotorama__img {
-    height: 450px !important;;
+    height: 450px !important;
+    object-fit: cover;
 }
 
 .fotorama__caption__wrap {
