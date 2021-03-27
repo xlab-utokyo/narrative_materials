@@ -83,6 +83,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+.narrative-hands {
+  width: 100%;
+}
+
 .wrapper {
   text-align: left;
   position: relative;
