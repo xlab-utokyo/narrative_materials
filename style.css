@@ -79,7 +79,7 @@ body::before {
     height:100vh;
     background-repeat:no-repeat;
     background-position:50% 100%;
-    background-image:url("./img/t3_0000.png");
+    background-image:url("./img/t3_0000_light.png");
     background-size:cover;
 }
 
