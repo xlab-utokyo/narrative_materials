@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <title>LineShaper</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>   
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="workspage.css">
+
+    <!--　OGP設定用　-->
+
+    <head prefix="og:url" content=>
+        <meta property="og:title" content="LineShaper - Narrative Materials ものがたるものたち"/> <br />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="東京大学 筧研究室 成果発表会" />
+        <meta property="og:image" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/nakano/lineshaper_main.jpg">
+        <meta property="og:site_name" content="LineShaper - Narrative Materials ものがたるものたち" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:url" content="https://xlab-utokyo.github.io/narrative_materials/workspage/LineShaper.html">
+
+        <meta name="twitter:card" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/nakano/lineshaper_main.jpg">
+        <meta name="twitter:title" content="LineShaper - Narrative Materials ものがたるものたち">
+        <meta name="twitter:image" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/nakano/lineshaper_main.jpg">
+
+        <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/icon-192x192.png">
+
+        <html lang="ja" dir="ltr">
+    </head>
+
+    <body>
+        <section id="section-about" class="section section-about cd-fixed-bg cd-bg-1">
+            <div class="container">
+                <section class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eV-SyB4_XUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                <h1 class="title">LineShaper<br><span>Taisuke Nakano + Kazumasa Tsujimura</span><br><span>+ Yasuaki Kakehi</span></h1>
+                 
+                <div class='wrapper'>
+                    <p>
+                        モノの長さを測る為の道具であるコンベックステープ．普段はその機能にのみ意識が向けられがちですが，素材の特徴に目を向けると，曲げた際には柔らかくやしなやかであり，伸ばした際には梁として自立する強度をもつという，相反する特徴を併せ持っています．私たちは，測るための道具であるコンベックスを，普段とは異なる解像度で見つめ直すことで，素材としての可能性と表現の広がりを探索しました．本作品を通して，素材本来の姿、佇まいを引き出し．モノとの間に生まれる新たな「ナラティブ」を提示します．
+                    </p>
+                </div>
+                <div id="fotorama" class="fotorama" data-autoplay="true" data-loop="true">
+                    <img src="../img/works/images/nakano/lineshaper_main.png">
+                    <img src="../img/works/images/nakano/lineshaper1.png">
+                    <img src="../img/works/images/nakano/lineshaper2.png">
+                    <img src="../img/works/images/nakano/lineshaper3.png">
+                    <img src="../img/works/images/nakano/lineshaper4.png">
+                </div>
+                <h2>Research Background</h2>
+                <div class="technical-container">
+                    <a id="demo01" href="#animatedModal"><img src="../img/works/poster/poster2021_lineshaper_5.png" class="img-pdf" alt="PDFサンプル"></a>
+                    <div id="animatedModal">
+                        <!--モーダルを閉じる-->
+                       <div class="close-animatedModal"> 
+                        <img src="../img/button/close.png" class="img-pdf-close" alt="">
+                       </div>
+                       <div class="modal-content">
+                            <img src="../img/works/poster/poster2021_lineshaper_5.png" class="img-pdf-full" alt="">
+                       </div>
+                   </div>
+                    <p>More +</p>
+                </div>
+                
+                <div class="button-container">
+                    <a href="https://forms.gle/gbh9YrNJawuQhEbR8" target="_blank"><img src="../img/button/comment.png" onmouseover="this.src='../img/button/comment_after.png'" onmouseout="this.src='../img/button/comment.png'" width="200" alt="コメント"></a>
+                    <a href="https://xlab-utokyo.github.io/showcase2021/"><img src="../img/button/back.png" onmouseover="this.src='../img/button/back_after.png'" onmouseout="this.src='../img/button/back.png'" width="200" alt="戻る"></a>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="../js/animatedModal.min.js"></script>
+        <script>
+            $("#demo01").animatedModal({
+                animatedIn: "zoomIn",
+                color: "rgb(56, 56, 56)"
+            });
+        </script>
+        <script>
+            $(function () {
+              // 1. Initialize fotorama manually.
+              var $fotoramaDiv = $('#fotorama').fotorama();
+          
+              // 2. Get the API object.
+              var fotorama = $fotoramaDiv.data('fotorama');
+          
+              // 3. Inspect it in console.
+              console.log(fotorama);
+            });
+          </script>
+    </body>
+
+    </html>

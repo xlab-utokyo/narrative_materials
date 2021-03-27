@@ -6,15 +6,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script type="text/javascript" src="./js/fotoramacustom.js"></script>
 
-    <script type="text/javascript" src="popup.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="./js/scroll.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous">
-        </script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!--　OGP設定用　-->
@@ -40,8 +42,8 @@
     <body>
 
         <section id="section0" class="section section0 cd-fixed-bg cd-bg-1">
-            <img src="./img/mainvisual.png" alt="Narrative Materials ものがたるものたち 東京大学筧康明研究室 成果発表会 / 2021年3月27日から29日まで" class="mainvis-pc">
-            <img src="./img/mainvisual_sp.png" alt="Narrative Materials ものがたるものたち 東京大学筧康明研究室 成果発表会 / 2021年3月27日から29日まで" class="mainvis-sp">
+            <img src="./img/mainvisual.png" alt="Narrative Materials ものがたるものたち 東京大学筧康明研究室 成果発表会 / 2021年3月27日から29日まで" class="mainvis-pc" loading="lazy">
+            <img src="./img/mainvisual_sp.png" alt="Narrative Materials ものがたるものたち 東京大学筧康明研究室 成果発表会 / 2021年3月27日から29日まで" class="mainvis-sp" loading="lazy">
         </section>
         <section id="section-about" class="section section-about cd-fixed-bg cd-bg-1">
             <div class="container">
@@ -79,6 +81,38 @@
             </div>
             <!-- 中略 -->
         </section>
+        <section id="section-works" class="section section-works cd-fixed-bg cd-bg-1">
+            <div class="container container3">
+                <h1 class="works-h1">Prototype Exhibition</h1>
+                <div class="wrapper fotorama-wrapper">
+                    <!-- Add images to <div class="fotorama"></div> -->
+                    <div class="fotorama" id="fotorama-divid" data-autoplay="true" data-loop="true" data-arrows="false" data-click="false" data-swipe="false">
+                        <div data-img="../img/works/images/fujii/fujii_main.jpg" data-caption="Artery" width=600 height=450><a href="workspage/Artery.html"></a></div>
+                        <div data-img="../img/works/images/fujinami/fujinami_main.jpg" data-caption="Sound Swarm" width=600 height=450><a href="workspage/SoundSwarm.html"></a></div>
+                        <div data-img="../img/works/images/taka/taka_main.png" data-caption="大爆走！オーディオレーシング２" width=600 height=450><a href="workspage/AudioRacing.html"></a></div>
+                        <div data-img="../img/works/images/saito/saito_main.png" data-caption="Slime mold games" width=600 height=450><a href="workspage/Slime_mold_games.html"></a></div>
+                        <div data-img="../img/works/images/date/date_main.jpg" data-caption="Gleamharvesting" width=600 height=450><a href="workspage/Gleamharvesting.html"></a></div>
+                        <div data-img="../img/works/images/nakano/lineshaper_main.png" data-caption="LineShaper" width=600 height=450><a href="workspage/LineShaper.html"></a></div>
+                        <div data-img="../img/works/images/air/air_main.png" data-caption="Air on Air" width=600 height=450><a href="workspage/Air_on_Air.html"></a></div>
+                        <div data-img="../img/works/images/wada/wada_main.png" data-caption="Narrative Hands" width=600 height=450><a href="workspage/NarrativeHands.html"></a></div>
+                    </div>
+                    <div class="ul-wrapper">
+                        <ul class="lilist thumbul">
+                            <li class="thumbli" id="0" onclick="StartIndex(0)"><a href="workspage/Artery.html"><img src="../img/works/images/fujii/fujii_main.jpg" alt="Artery" title="Artery" width=75 height=112.5 loading="lazy"></a></li>
+                            <li class="thumbli" id="1" onclick="StartIndex(1)"><a href="workspage/SoundSwarm.html"><img src="../img/works/images/fujinami/fujinami_main.jpg" alt="Sound Swarm" title="Sound Swarm" width=75 height=112.5 loading="lazy"></a></li>
+                            <li class="thumbli" id="2" onclick="StartIndex(2)"><a href="workspage/AudioRacing.html"><img src="../img/works/images/taka/taka_main.png" alt="大爆走！オーディオレーシング２" title="大爆走！オーディオレーシング２" width=75 height=112.5 loading="lazy"></a></li>
+                            <li class="thumbli" id="3" onclick="StartIndex(3)"><a href="workspage/Slime_mold_games.html"><img src="../img/works/images/saito/saito_main.png" alt="Slime mold games" title="Slime mold games" width=75 height=112.5 loading="lazy"></a></li>
+                        </ul>
+                        <ul class="lilist thumbul">
+                            <li class="thumbli" id="4" onclick="StartIndex(4)"><a href="workspage/Gleamharvesting.html"><img src="../img/works/images/date/date_main.jpg" alt="Gleamharvesting" title="Gleamharvesting" width=75 height=112.5 loading="lazy"></a></li>
+                            <li class="thumbli" id="5" onclick="StartIndex(5)"><a href="workspage/LineShaper.html"><img src="../img/works/images/nakano/lineshaper_main.png" alt="LineShaper" title="LineShaper" width=75 height=112.5 loading="lazy"></a></li>
+                            <li class="thumbli" id="7" onclick="StartIndex(6)"><a href="workspage/Air_on_Air.html"><img src="../img/works/images/air/air_main.png" alt="Air on Air" title="Air on Air" width=75 height=112.5 loading="lazy"></a></li>
+                            <li class="thumbli" id="6" onclick="StartIndex(7)"><a href="workspage/NarrativeHands.html"><img src="../img/works/images/wada/wada_main.png" alt="NarrativeHands" title="NarrativeHands" width=75 height=112.5 loading="lazy"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="section-talk" class="section section-talk cd-fixed-bg cd-bg-1">
             <div class="container">
                 <h1 class="talk-h1">Talk / Interactive Session</h1>
@@ -86,30 +120,14 @@
                     <p>
                         3/28(日)の14時からZoomを使用したオンライントークイベントを開催します。本イベントは、①本年度の研究/プロジェクトの紹介 ②ゲストを招いたトークセッション ③ラボメンバーによるインタラクティブ研究発表セッションの３つのパートで開催されます。ZoomのURLはPeatixより参加登録いただいた方々にお知らせします。
                     </p>
-                    <p>
-                        第1部では、今年度修了予定の学生による修士研究発表に加えて、数件の研究発表（トーク）を予定しています。
-                    </p>
-                    <p>
-                        第2部のゲストトークでは、we+の関口愛理さん（デザインエンジニア）と山口情報芸術センター(YCAM)の今野恵菜さん（教育普及課職員（エデュケーター））をゲストとしてお招きし、筧康明准教授およびラボメンバーを交えて、Narrative Materialsというテーマを切り口としながらこれからの表現や研究についてトーク・議論を展開します。
-                    </p>
-                    <p>
-                        第3部では、ラボメンバーによる研究発表をZoomにおけるインタラクティブ発表形式で行います。是非議論にご参加いただければと思います。
-                    </p>
                     <div class="talk-img">
-                        <img src="./img/TL.png" class="talk-table" alt="">
-                        <img src="./img/TL_sp.png" class="talk-table-sp" alt="">
-                        <p class="talk-attention">※プログラム詳細は後日公開します。</p>
+                        <img src="./img/TL_final.png" class="talk-table" alt="" loading="lazy">
+                        <img src="./img/TL_final_sp1.png" class="talk-table-sp" alt="" loading="lazy">
+                        <img src="./img/TL_final_sp2.png" class="talk-table-sp" alt="" loading="lazy">
+                        <img src="./img/TL_final_sp3.png" class="talk-table-sp" alt="" loading="lazy">
                         <a href="https://xlab-showcase2021.peatix.com" target="_blank"><img src="./img/button/participation.png" class="talk-participation" alt="" onmouseover="this.src='./img/button/participation_after.png'" onmouseout="this.src='./img/button/participation.png'"></a>
                         <a href="https://xlab-showcase2021.peatix.com" target="_blank"><img src="./img/button/participation_sp.png" class="talk-participation-sp" alt="" onmouseover="this.src='./img/button/participation_after_sp.png'" onmouseout="this.src='./img/button/participation_sp.png'"></a>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="section-works" class="section section-works cd-fixed-bg cd-bg-1">
-            <div class="container container3">
-                <h1 class="works-h1">Prototype Exhibition</h1>
-                <div class="wrapper">
-                    <img src="./img/comingsoon.png" alt="">
                 </div>
             </div>
         </section>

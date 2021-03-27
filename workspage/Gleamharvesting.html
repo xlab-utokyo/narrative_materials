@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Gleamharvesting</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>   
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="workspage.css">
+
+    <!--　OGP設定用　-->
+
+    <head prefix="og:url" content=>
+        <meta property="og:title" content="Gleamharvesting - Narrative Materials ものがたるものたち"/> <br />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="東京大学 筧研究室 成果発表会" />
+        <meta property="og:image" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/date/date_main.jpg">
+        <meta property="og:site_name" content="Gleamharvesting - Narrative Materials ものがたるものたち" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:url" content="https://xlab-utokyo.github.io/narrative_materials/workspage/Gleamharvesting.html">
+
+        <meta name="twitter:card" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/date/date_main.jpg">
+        <meta name="twitter:title" content="Gleamharvesting - Narrative Materials ものがたるものたち">
+        <meta name="twitter:image" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/date/date_main.jpg">
+
+        <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/icon-192x192.png">
+
+        <html lang="ja" dir="ltr">
+    </head>
+
+    <body>
+        <section id="section-about" class="section section-about cd-fixed-bg cd-bg-1">
+            <div class="container">
+                <section class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cW71ndZ9ydc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                <h1 class="title">Gleamharvesting<br><span>Wataru Date + Yasuaki Kakehi</span></h1>
+                 
+                <div class='wrapper'>
+                    <p>
+                        塩の結晶を纏う照明によるサイトスペシフィックなインスタレーション。
+                    </p>
+                    <p>
+                        海から採取された海水で透明の容器を満たし、そこに小さなLEDを点灯したまま浸ける。蒸発等に伴い水中の塩分濃度が変化すると、容器の中ではLEDの表面に塩の結晶が付着し始める。
+                    </p>
+                    <p>
+                        その「成長」は、気温や湿度、日照など周囲の環境（変化）の影響を受ける。このため、長い時間をかけて変化する形は環境を反映し、光の装いを築いていく。 一方、雨が降ると容器中の塩分濃度が低下し、結晶はたちまち溶けて消えていく。作品を通して、時の蓄積と儚さの両方に向き合うことを企図した。
+                    </p>
+                </div>
+                <img src="../img/works/images/date/date_main.jpg" class="works-img">
+                
+                <div class="button-container">
+                    <a href="https://forms.gle/gbh9YrNJawuQhEbR8" target="_blank"><img src="../img/button/comment.png" onmouseover="this.src='../img/button/comment_after.png'" onmouseout="this.src='../img/button/comment.png'" width="200" alt="コメント"></a>
+                    <a href="https://xlab-utokyo.github.io/showcase2021/"><img src="../img/button/back.png" onmouseover="this.src='../img/button/back_after.png'" onmouseout="this.src='../img/button/back.png'" width="200" alt="戻る"></a>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="../js/animatedModal.min.js"></script>
+        <script>
+            $("#demo01").animatedModal({
+                animatedIn: "zoomIn",
+                color: "rgb(56, 56, 56)"
+            });
+        </script>
+        <script>
+            $(function () {
+              // 1. Initialize fotorama manually.
+              var $fotoramaDiv = $('#fotorama').fotorama();
+          
+              // 2. Get the API object.
+              var fotorama = $fotoramaDiv.data('fotorama');
+          
+              // 3. Inspect it in console.
+              console.log(fotorama);
+            });
+          </script>
+    </body>
+
+    </html>

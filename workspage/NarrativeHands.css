@@ -1,0 +1,32 @@
+.fotorama__wrap {
+    width: 100% !important;
+}
+
+.fotorama__stage {
+    width: 100% !important;
+    height: 56;
+}
+
+.fotorama__stage__shaft{
+    width: 100% !important;
+}
+
+.fotorama__img {
+    width: 100%;
+}
+
+.fotorama div {
+    letter-spacing: 0.1em;
+}
+
+.fotorama__caption__wrap {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li a{
+    color: #fff;
+  }

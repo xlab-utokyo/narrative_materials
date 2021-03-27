@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <title>大爆走！オーディオレーシング２</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>   
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="workspage.css">
+
+    <!--　OGP設定用　-->
+
+    <head prefix="og:url" content=>
+        <meta property="og:title" content="大爆走！オーディオレーシング２ - Narrative Materials ものがたるものたち" /> <br />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="東京大学 筧研究室 成果発表会" />
+        <meta property="og:image" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/taka/taka_main.jpg">
+        <meta property="og:site_name" content="大爆走！オーディオレーシング２ - Narrative Materials ものがたるものたち" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:url" content="https://xlab-utokyo.github.io/narrative_materials/workspage/AudioRacing.html">
+
+        <meta name="twitter:card" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/taka/taka_main.jpg">
+        <meta name="twitter:title" content="大爆走！オーディオレーシング２ - Narrative Materials ものがたるものたち">
+        <meta name="twitter:image" content="https://xlab-utokyo.github.io/narrative_materials/img/works/images/taka/taka_main.jpg">
+
+        <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/icon-192x192.png">
+
+        <html lang="ja" dir="ltr">
+    </head>
+
+    <body>
+        <section id="section-about" class="section section-about cd-fixed-bg cd-bg-1">
+            <div class="container">
+                <section class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M8QfpbJkia8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                <h1 class="title">大爆走！オーディオレーシング２<br><span>Tomoyasu Taka</span></h1>
+                 
+                <div class='wrapper'>
+                    <p>
+                        本作品は視覚を使わず音情報のみでプレイするレーシングゲームである。この画面のないゲームでは、プレイヤーは聞こえてくる音楽の位置を頼りに、進む方向を決め車を走らせる。コースの形状、車の位置などに応じて音源の左右振幅差を制御することで、プレイヤーは音を頼りに左右にハンドルを切りながら走行し、ゴールにたどり着くことができる。視覚情報の占める割合が高いデジタルゲームであえて視覚情報をカットし、さらに身体的な運転操作と結びつけることで、プレイヤーの想像力を掻き立てる体験を創り出す。
+                    </p>
+                    <br>
+                    <p>
+                        作品をプレイ可能なサイト：<a href="https://taka-chin.com/Audio_Racing/" target="_blank">https://taka-chin.com/Audio_Racing/</a>
+                    </p>
+                    <br>
+                    <ul>
+                        作品クレジット:
+                        <li>Game Design & Research: Tomoyasu Taka</li>
+                        <li>Voice: Hiroki Kaimoto</li>
+                        <li>Music: Nana Masuda</li>
+                        <li>Research: Yasuaki Kakehi</li>
+                        <li>Special Thanks: Yukio Nozawa, Audio Game Center Project</li>
+                    </ul>
+                </div>
+                <div id="fotorama" class="fotorama" data-autoplay="true" data-loop="true">
+                    <img src="../img/works/images/taka/taka_main.jpg">
+                    <img src="../img/works/images/taka/taka_1.jpg">
+                    <img src="../img/works/images/taka/taka_2.jpg">
+                    <img src="../img/works/images/taka/taka_3.jpg">
+                    <img src="../img/works/images/taka/taka_4.jpg">
+                    <img src="../img/works/images/taka/taka_5.jpg">
+                </div>
+                
+                <div class="button-container">
+                    <a href="https://forms.gle/gbh9YrNJawuQhEbR8" target="_blank"><img src="../img/button/comment.png" onmouseover="this.src='../img/button/comment_after.png'" onmouseout="this.src='../img/button/comment.png'" width="200" alt="コメント"></a>
+                    <a href="https://xlab-utokyo.github.io/showcase2021/"><img src="../img/button/back.png" onmouseover="this.src='../img/button/back_after.png'" onmouseout="this.src='../img/button/back.png'" width="200" alt="戻る"></a>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="../js/animatedModal.min.js"></script>
+        <script>
+            $("#demo01").animatedModal({
+                animatedIn: "zoomIn",
+                color: "rgb(56, 56, 56)"
+            });
+        </script>
+        <script>
+            $(function () {
+              // 1. Initialize fotorama manually.
+              var $fotoramaDiv = $('#fotorama').fotorama();
+          
+              // 2. Get the API object.
+              var fotorama = $fotoramaDiv.data('fotorama');
+          
+              // 3. Inspect it in console.
+              console.log(fotorama);
+            });
+          </script>
+    </body>
+
+    </html>
