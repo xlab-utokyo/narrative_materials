@@ -104,6 +104,16 @@ p {
     display: none;
 }
 
+/* ==================== about ==================== */
+#section-about {
+    height: 70vh;
+}
+
+/* ==================== about ==================== */
+#section-concept {
+    height: 80vh;
+}
+
 /* ==================== talkevent ==================== */
 
 .talk-h1:before {
@@ -363,8 +373,8 @@ footer p {
 
 /* ==================== works ==================== */
 
-    .section-works {
-        margin-top: 230px;
+    #section-works {
+        height: 85vh;
     }
 
     .fotorama-wrapper {
